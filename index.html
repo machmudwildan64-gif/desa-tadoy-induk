@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Desa Tadoy Induk — Kecamatan Bolaang Timur, Bolaang Mongondow</title>
+<meta name="description" content="Situs profil resmi Desa Tadoy Induk, Kecamatan Bolaang Timur, Kabupaten Bolaang Mongondow, Sulawesi Utara. Sejarah, demografi, dan potensi ekonomi desa." />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+<!-- Tailwind CSS via CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          emerald: {
+            950: '#0A3327',
+            900: '#0E4536',
+            800: '#125843',
+            700: '#186B51',
+            600: '#22815F',
+          },
+          sand: {
+            50: '#FCFAF5',
+            100: '#F7F3EA',
+            200: '#EFE7D6',
+            300: '#E2D6BC',
+          },
+          ink: {
+            900: '#16211D',
+            700: '#33423C',
+            500: '#5B6D65',
+          },
+          gold: {
+            500: '#B98B4E',
+            600: '#9C7440',
+          },
+          sea: {
+            600: '#2F6B67',
+            700: '#255450',
+          },
+        },
+        fontFamily: {
+          display: ['"Fraunces"', 'serif'],
+          body: ['"Plus Jakarta Sans"', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', 'monospace'],
+        },
+        boxShadow: {
+          soft: '0 20px 60px -20px rgba(14, 69, 54, 0.25)',
+          card: '0 10px 30px -12px rgba(22, 33, 29, 0.18)',
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FCFAF5; color: #16211D; }
+  h1, h2, h3, .font-display { font-family: 'Fraunces', serif; }
+  .font-mono-data { font-family: 'IBM Plex Mono', monospace; }
+
+  /* Subtle animated reveal, disabled for reduced-motion users */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* Bogani seal — radiating compass motif, the site's signature emblem */
+  .bogani-seal { filter: drop-shadow(0 8px 20px rgba(185,139,78,0.25)); }
+
+  /* Mobile menu slide */
+  #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+  #mobile-menu.open { max-height: 480px; }
+
+  /* Custom scrollbar, subtle */
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #F7F3EA; }
+  ::-webkit-scrollbar-thumb { background: #B98B4E; border-radius: 999px; }
+
+  .wave-divider svg { display: block; width: 100%; height: auto; }
+
+  .timeline-line { background: linear-gradient(180deg, rgba(185,139,78,0.05) 0%, #B98B4E 12%, #B98B4E 88%, rgba(185,139,78,0.05) 100%); }
+</style>
+</head>
+
+<body class="antialiased">
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-sand-50/90 backdrop-blur-md border-b border-transparent">
+  <nav class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="flex items-center justify-between h-20">
+
+      <!-- Logo / Emblem -->
+      <a href="#beranda" class="flex items-center gap-3 group">
+        <svg class="bogani-seal w-11 h-11" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="30" stroke="#0E4536" stroke-width="2"/>
+          <circle cx="32" cy="32" r="22" stroke="#B98B4E" stroke-width="1.5"/>
+          <g stroke="#0E4536" stroke-width="1.5">
+            <line x1="32" y1="4" x2="32" y2="14"/>
+            <line x1="32" y1="50" x2="32" y2="60"/>
+            <line x1="4" y1="32" x2="14" y2="32"/>
+            <line x1="50" y1="32" x2="60" y2="32"/>
+            <line x1="11.5" y1="11.5" x2="18.5" y2="18.5"/>
+            <line x1="45.5" y1="45.5" x2="52.5" y2="52.5"/>
+            <line x1="52.5" y1="11.5" x2="45.5" y2="18.5"/>
+            <line x1="18.5" y1="45.5" x2="11.5" y2="52.5"/>
+          </g>
+          <circle cx="32" cy="32" r="9" fill="#0E4536"/>
+          <path d="M32 26 L34.5 31 L32 38 L29.5 31 Z" fill="#B98B4E"/>
+        </svg>
+        <div class="leading-tight">
+          <p class="font-display font-semibold text-lg text-emerald-950 tracking-tight">Tadoy Induk</p>
+          <p class="text-[11px] uppercase tracking-[0.18em] text-ink-500 font-mono-data">Kec. Bolaang Timur · Bolmong</p>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex items-center gap-9 text-sm font-medium text-ink-700">
+        <li><a href="#beranda" class="nav-link hover:text-emerald-800 transition-colors">Beranda</a></li>
+        <li><a href="#sejarah" class="nav-link hover:text-emerald-800 transition-colors">Sejarah</a></li>
+        <li><a href="#demografi" class="nav-link hover:text-emerald-800 transition-colors">Demografi</a></li>
+        <li><a href="#potensi" class="nav-link hover:text-emerald-800 transition-colors">Potensi</a></li>
+        <li><a href="#peta" class="nav-link hover:text-emerald-800 transition-colors">Peta</a></li>
+        <li><a href="#kontak" class="nav-link hover:text-emerald-800 transition-colors">Kontak</a></li>
+      </ul>
+
+      <a href="#kontak" class="hidden md:inline-flex items-center gap-2 bg-emerald-900 hover:bg-emerald-800 text-sand-50 text-sm font-semibold px-5 py-2.5 rounded-full transition-colors shadow-card">
+        <i class="fa-solid fa-location-dot text-xs"></i> Hubungi Kami
+      </a>
+
+      <!-- Hamburger -->
+      <button id="hamburger-btn" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden relative w-10 h-10 flex flex-col items-center justify-center gap-[5px] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-700 rounded-lg">
+        <span class="hb-bar block w-6 h-0.5 bg-emerald-950 rounded-full transition-all duration-300"></span>
+        <span class="hb-bar block w-6 h-0.5 bg-emerald-950 rounded-full transition-all duration-300"></span>
+        <span class="hb-bar block w-6 h-0.5 bg-emerald-950 rounded-full transition-all duration-300"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden">
+      <ul class="flex flex-col gap-1 pb-6 text-ink-700 font-medium">
+        <li><a href="#beranda" class="mobile-link block px-2 py-3 rounded-lg hover:bg-sand-200 transition-colors">Beranda</a></li>
+        <li><a href="#sejarah" class="mobile-link block px-2 py-3 rounded-lg hover:bg-sand-200 transition-colors">Sejarah</a></li>
+        <li><a href="#demografi" class="mobile-link block px-2 py-3 rounded-lg hover:bg-sand-200 transition-colors">Demografi</a></li>
+        <li><a href="#potensi" class="mobile-link block px-2 py-3 rounded-lg hover:bg-sand-200 transition-colors">Potensi</a></li>
+        <li><a href="#peta" class="mobile-link block px-2 py-3 rounded-lg hover:bg-sand-200 transition-colors">Peta</a></li>
+        <li><a href="#kontak" class="mobile-link block px-2 py-3 rounded-lg bg-emerald-900 text-sand-50 text-center mt-2">Hubungi Kami</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="beranda" class="relative pt-40 pb-28 md:pt-48 md:pb-36 overflow-hidden bg-emerald-950">
+
+  <!-- Video latar hero — bergantian otomatis (video-1 → video-2 → video-3 → ulang).
+       Dikelola oleh initHeroVideo() di app.js. Elemen <img id="hero-fallback"> tampil
+       sebagai pengganti bila video tidak dapat diputar (mis. koneksi sangat lambat,
+       hemat data aktif, atau prefers-reduced-motion aktif). -->
+  <div class="absolute inset-0 z-0">
+    <video
+      id="hero-video"
+      class="w-full h-full object-cover"
+      muted
+      playsinline
+      autoplay
+      preload="auto"
+      poster="assets/img/hero-poster.jpg"
+    ></video>
+    <img
+      id="hero-fallback"
+      src="assets/img/hero-poster.jpg"
+      alt="Suasana Desa Tadoy Induk"
+      class="hidden w-full h-full object-cover"
+    />
+    <!-- Overlay gradasi agar teks tetap kontras di atas video apa pun -->
+    <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/90 via-emerald-950/75 to-emerald-950/50"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-transparent to-emerald-950/30"></div>
+  </div>
+
+  <!-- Background texture -->
+  <div class="absolute inset-0 z-[1] opacity-[0.07]" style="background-image: radial-gradient(circle at 2px 2px, #F7F3EA 1px, transparent 0); background-size: 28px 28px;"></div>
+  <div class="absolute z-[1] -right-24 -top-24 w-[420px] h-[420px] rounded-full bg-emerald-800/40 blur-3xl"></div>
+  <div class="absolute z-[1] -left-32 bottom-0 w-[380px] h-[380px] rounded-full bg-gold-500/10 blur-3xl"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+
+    <div class="lg:col-span-7">
+      <!-- TODO: KONFIRMASI KE PERANGKAT DESA — sumber publik (Wikipedia, BPK RI, portal berita lokal)
+           menunjukkan Tadoy/Tadoy I berada di Kecamatan BOLAANG TIMUR, bukan Kecamatan Bolaang.
+           Pastikan ke Sangadi/Kaur Pemerintahan sebelum publikasi, lalu hapus komentar ini. -->
+      <div class="flex flex-wrap items-center gap-2 mb-7">
+        <span class="inline-flex items-center gap-2 bg-sand-50/10 border border-sand-50/15 text-sand-100 text-xs font-mono-data uppercase tracking-wider px-4 py-1.5 rounded-full">
+          <i class="fa-solid fa-map-pin text-gold-500"></i> Kec. Bolaang Timur
+        </span>
+        <span class="inline-flex items-center gap-2 bg-sand-50/10 border border-sand-50/15 text-sand-100 text-xs font-mono-data uppercase tracking-wider px-4 py-1.5 rounded-full">
+          Kab. Bolaang Mongondow
+        </span>
+        <span class="inline-flex items-center gap-2 bg-sand-50/10 border border-sand-50/15 text-sand-100 text-xs font-mono-data uppercase tracking-wider px-4 py-1.5 rounded-full">
+          Sulawesi Utara
+        </span>
+      </div>
+
+      <h1 class="font-display text-5xl sm:text-6xl lg:text-[4.2rem] leading-[1.05] font-semibold text-sand-50 tracking-tight">
+        Desa Tadoy Induk
+      </h1>
+      <p class="mt-6 max-w-xl text-lg text-sand-200/85 leading-relaxed">
+        Warisan peradaban Totabuan yang bertumbuh di titik temu pesisir Bolaang dan pedalaman Mongondow —
+        dijaga oleh semangat kepemimpinan para Bogani, dan diteruskan oleh masyarakatnya hari ini.
+      </p>
+
+      <div class="mt-10 flex flex-wrap items-center gap-4">
+        <a href="#sejarah" class="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-emerald-950 font-semibold px-7 py-3.5 rounded-full transition-colors shadow-soft">
+          Jelajahi Sejarah <i class="fa-solid fa-arrow-right text-sm"></i>
+        </a>
+        <a href="#potensi" class="inline-flex items-center gap-2 border border-sand-50/25 hover:border-sand-50/50 text-sand-50 font-semibold px-7 py-3.5 rounded-full transition-colors">
+          Lihat Potensi Desa
+        </a>
+      </div>
+
+      <!-- TODO: cantumkan sumber & tahun data (mis. "Data per Desember 2025, sumber: Kantor Desa")
+           begitu angka final dikonfirmasi, agar data punya rujukan yang jelas bagi pengunjung. -->
+      <div class="mt-14 flex flex-wrap items-center gap-x-10 gap-y-4 font-mono-data text-sand-100">
+        <div>
+          <p class="text-3xl font-semibold">±1.700</p>
+          <p class="text-xs uppercase tracking-wider text-sand-200/60 mt-1">Jiwa Penduduk</p>
+        </div>
+        <div class="w-px h-10 bg-sand-50/15 hidden sm:block"></div>
+        <div>
+          <p class="text-3xl font-semibold">481</p>
+          <p class="text-xs uppercase tracking-wider text-sand-200/60 mt-1">Kepala Keluarga</p>
+        </div>
+        <div class="w-px h-10 bg-sand-50/15 hidden sm:block"></div>
+        <div>
+          <p class="text-3xl font-semibold">2</p>
+          <p class="text-xs uppercase tracking-wider text-sand-200/60 mt-1">Desa Hasil Pemekaran</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Emblem showcase -->
+    <div class="lg:col-span-5 relative hidden lg:flex justify-center items-center">
+      <div class="relative w-[360px] h-[360px]">
+        <div class="absolute inset-0 rounded-full border border-sand-50/10"></div>
+        <div class="absolute inset-8 rounded-full border border-gold-500/30"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <svg class="bogani-seal w-56 h-56" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" stroke="#F7F3EA" stroke-opacity="0.5" stroke-width="1"/>
+            <circle cx="32" cy="32" r="22" stroke="#B98B4E" stroke-width="1"/>
+            <g stroke="#F7F3EA" stroke-opacity="0.6" stroke-width="1">
+              <line x1="32" y1="2" x2="32" y2="12"/>
+              <line x1="32" y1="52" x2="32" y2="62"/>
+              <line x1="2" y1="32" x2="12" y2="32"/>
+              <line x1="52" y1="32" x2="62" y2="32"/>
+            </g>
+            <circle cx="32" cy="32" r="10" fill="#B98B4E"/>
+            <path d="M32 25 L35 32 L32 40 L29 32 Z" fill="#0A3327"/>
+          </svg>
+        </div>
+        <p class="absolute -bottom-2 left-1/2 -translate-x-1/2 font-mono-data text-[11px] uppercase tracking-[0.25em] text-sand-200/60">Simbol Bogani</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave divider -->
+  <div class="wave-divider absolute z-10 bottom-0 left-0 right-0 leading-none">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path d="M0,64 C240,110 480,20 720,40 C960,60 1200,100 1440,50 L1440,90 L0,90 Z" fill="#FCFAF5"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ SEJARAH ============ -->
+<section id="sejarah" class="py-24 md:py-32 bg-sand-50">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="max-w-2xl reveal">
+      <p class="font-mono-data text-xs uppercase tracking-[0.2em] text-gold-600 mb-4">Asal Usul & Budaya</p>
+      <h2 class="font-display text-4xl sm:text-5xl font-semibold text-emerald-950 tracking-tight">
+        Jejak Peradaban Totabuan
+      </h2>
+      <p class="mt-6 text-ink-700 leading-relaxed">
+        Desa Tadoy Induk berakar dari peradaban Totabuan kuno, ketika wilayah ini dipimpin oleh para
+        <span class="font-semibold text-emerald-800">Bogani</span> — pemimpin adat yang kuat dan bijaksana.
+        Letaknya di antara garis pesisir Bolaang dan dataran pedalaman Mongondow menjadikan desa ini ruang
+        harmonisasi dua watak budaya sekaligus: keterbukaan masyarakat pesisir dan kedalaman tradisi pedalaman.
+      </p>
+    </div>
+
+    <!-- Timeline rendered via JavaScript -->
+    <div id="timeline-container" class="mt-20 relative"></div>
+  </div>
+</section>
+
+<!-- ============ DEMOGRAFI ============ -->
+<section id="demografi" class="py-24 md:py-32 bg-emerald-950 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 2px 2px, #F7F3EA 1px, transparent 0); background-size: 28px 28px;"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="max-w-2xl reveal">
+      <p class="font-mono-data text-xs uppercase tracking-[0.2em] text-gold-500 mb-4">Data Kependudukan</p>
+      <h2 class="font-display text-4xl sm:text-5xl font-semibold text-sand-50 tracking-tight">
+        Demografi Desa
+      </h2>
+      <p class="mt-6 text-sand-200/80 leading-relaxed">
+        Sejak proses pemekaran wilayah yang melahirkan Desa Tadoy Induk dan Desa Tadoy I, masyarakat
+        Tadoy Induk terus bertumbuh dengan struktur kependudukan yang stabil dan tertata.
+      </p>
+    </div>
+
+    <!-- Stat cards rendered via JavaScript -->
+    <div id="stats-container" class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+  </div>
+</section>
+
+<!-- ============ POTENSI ============ -->
+<section id="potensi" class="py-24 md:py-32 bg-sand-50">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="max-w-2xl reveal">
+      <p class="font-mono-data text-xs uppercase tracking-[0.2em] text-gold-600 mb-4">Ekonomi & Sumber Daya</p>
+      <h2 class="font-display text-4xl sm:text-5xl font-semibold text-emerald-950 tracking-tight">
+        Potensi Desa
+      </h2>
+      <p class="mt-6 text-ink-700 leading-relaxed max-w-2xl">
+        Bertumpu pada kekayaan alam pesisir utara dan kesuburan lahan perkebunan, Tadoy Induk mengembangkan
+        tiga pilar ekonomi utama yang saling menopang.
+      </p>
+    </div>
+
+    <!-- Potential cards rendered via JavaScript -->
+    <div id="potensi-container" class="mt-16 grid md:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- ============ PETA WILAYAH ============ -->
+<section id="peta" class="py-24 md:py-32 bg-sand-100">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="max-w-2xl reveal">
+      <p class="font-mono-data text-xs uppercase tracking-[0.2em] text-gold-600 mb-4">Lokasi Geografis</p>
+      <h2 class="font-display text-4xl sm:text-5xl font-semibold text-emerald-950 tracking-tight">
+        Peta Wilayah Desa
+      </h2>
+      <p class="mt-6 text-ink-700 leading-relaxed max-w-2xl">
+        Desa Tadoy Induk berada di Kecamatan Bolaang Timur, Kabupaten Bolaang Mongondow,
+        berdampingan dengan Desa Tadoy I hasil pemekaran wilayah, tidak jauh dari garis pesisir
+        pantai utara Sulawesi.
+      </p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-3 gap-6 reveal">
+      <!-- Peta interaktif -->
+      <div class="lg:col-span-2 rounded-3xl overflow-hidden shadow-card border border-sand-300/60 bg-white">
+        <!-- Peta menunjuk ke Kantor Kecamatan Bolaang Timur (titik acuan terdekat yang terverifikasi
+             di Google Maps). Titik koordinat presisi desa (0.906031, 124.1622) tetap ditampilkan
+             di kartu info sebelah kanan. -->
+        <iframe
+          id="map-frame"
+          class="w-full h-[420px] md:h-[480px] grayscale-[15%] contrast-[1.05]"
+          style="border:0;"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Peta Lokasi Kecamatan Bolaang Timur — Desa Tadoy Induk"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2454.347344533083!2d124.14925643879316!3d0.9338528677583752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x327e737567d50577%3A0x661f2d5071930e06!2sKantor%20Kecamatan%20Bolaang%20Timur!5e1!3m2!1sid!2sid!4v1784865215494!5m2!1sid!2sid">
+        </iframe>
+      </div>
+
+      <!-- Info wilayah di samping peta -->
+      <div class="flex flex-col gap-5">
+        <div class="bg-emerald-950 rounded-2xl p-7 flex-1">
+          <span class="w-11 h-11 rounded-xl bg-gold-500/15 text-gold-500 flex items-center justify-center text-lg mb-5">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </span>
+          <p class="font-mono-data text-[11px] uppercase tracking-[0.18em] text-gold-500 mb-2">Titik Koordinat</p>
+          <p class="text-sm text-sand-100 leading-relaxed font-mono-data">
+            0°54'21.71"N&nbsp;&nbsp;124°9'43.92"E
+          </p>
+          <p class="text-sm text-sand-200/70 leading-relaxed mt-3">
+            Desa Tadoy Induk berbatasan langsung dengan Desa Tadoy I di sisi wilayah hasil
+            pemekaran, serta desa-desa lain dalam lingkup Kecamatan Bolaang Timur.
+          </p>
+        </div>
+        <div class="bg-white border border-sand-300/60 rounded-2xl p-7 flex-1">
+          <span class="w-11 h-11 rounded-xl bg-emerald-950/5 text-emerald-800 flex items-center justify-center text-lg mb-5">
+            <i class="fa-solid fa-signs-post"></i>
+          </span>
+          <p class="font-mono-data text-[11px] uppercase tracking-[0.18em] text-gold-600 mb-2">Akses Wilayah</p>
+          <p class="text-sm text-ink-700 leading-relaxed">
+            Dilewati jalur logistik strategis yang menghubungkan kawasan pesisir utara dengan
+            wilayah sekitarnya, memudahkan mobilitas warga dan distribusi hasil bumi.
+          </p>
+        </div>
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=0.906031,124.1622"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-2 border border-emerald-900/20 hover:border-emerald-900/50 text-emerald-900 font-semibold px-6 py-3.5 rounded-full transition-colors text-sm"
+        >
+          Buka di Google Maps <i class="fa-solid fa-up-right-from-square text-xs"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA / KONTAK ============ -->
+<section id="kontak" class="py-20 bg-sand-100 border-t border-sand-300/60">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="bg-emerald-950 rounded-3xl px-8 py-14 sm:px-14 sm:py-16 grid lg:grid-cols-2 gap-10 items-center shadow-soft reveal">
+      <div>
+        <h3 class="font-display text-3xl sm:text-4xl font-semibold text-sand-50 tracking-tight">
+          Kunjungi &amp; Kenali Tadoy Induk
+        </h3>
+        <p class="mt-4 text-sand-200/80 leading-relaxed max-w-md">
+          Kantor Desa Tadoy Induk terbuka untuk warga, mitra kerja sama, maupun pengunjung yang ingin
+          mengenal lebih jauh sejarah dan potensi desa kami.
+        </p>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-6 font-mono-data text-sand-100 text-sm">
+        <!-- TODO: KONFIRMASI SEMUA DATA KONTAK — alamat, jam operasional, email, dan nomor telepon/WhatsApp
+             di bawah ini masih PLACEHOLDER dan belum diverifikasi ke kantor desa. Jangan publikasikan
+             sebelum diganti dengan data riil. -->
+        <div class="flex items-start gap-3">
+          <i class="fa-solid fa-location-dot text-gold-500 mt-1"></i>
+          <span>Desa Tadoy Induk, Kec. Bolaang Timur,<br/>Kab. Bolaang Mongondow, Sulawesi Utara</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <i class="fa-solid fa-clock text-gold-500 mt-1"></i>
+          <span>Senin – Jumat<br/>08.00 – 15.00 WITA</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <i class="fa-solid fa-envelope text-gold-500 mt-1"></i>
+          <span>tadoyinduk@bolmongkab.go.id</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <i class="fa-brands fa-whatsapp text-gold-500 mt-1"></i>
+          <span>Kantor Desa Tadoy Induk<br/>(nomor WA resmi menyusul)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-emerald-950 border-t border-sand-50/10">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-16 grid md:grid-cols-4 gap-10">
+
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-3 mb-4">
+        <svg class="w-9 h-9" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="30" stroke="#F7F3EA" stroke-opacity="0.4" stroke-width="2"/>
+          <circle cx="32" cy="32" r="9" fill="#B98B4E"/>
+        </svg>
+        <p class="font-display text-xl font-semibold text-sand-50">Pemerintah Desa Tadoy Induk</p>
+      </div>
+      <p class="text-sand-200/70 text-sm leading-relaxed max-w-sm">
+        Situs profil resmi Desa Tadoy Induk, Kecamatan Bolaang Timur, Kabupaten Bolaang Mongondow,
+        Provinsi Sulawesi Utara. Dikelola sebagai sarana informasi publik desa.
+      </p>
+      <div class="flex items-center gap-3 mt-6">
+        <a href="#" aria-label="Facebook" class="w-9 h-9 flex items-center justify-center rounded-full bg-sand-50/10 hover:bg-gold-500 hover:text-emerald-950 text-sand-100 transition-colors"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+        <a href="#" aria-label="Instagram" class="w-9 h-9 flex items-center justify-center rounded-full bg-sand-50/10 hover:bg-gold-500 hover:text-emerald-950 text-sand-100 transition-colors"><i class="fa-brands fa-instagram text-sm"></i></a>
+        <a href="#" aria-label="YouTube" class="w-9 h-9 flex items-center justify-center rounded-full bg-sand-50/10 hover:bg-gold-500 hover:text-emerald-950 text-sand-100 transition-colors"><i class="fa-brands fa-youtube text-sm"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <p class="font-semibold text-sand-50 text-sm uppercase tracking-wider mb-4">Navigasi</p>
+      <ul class="space-y-3 text-sand-200/70 text-sm">
+        <li><a href="#beranda" class="hover:text-gold-500 transition-colors">Beranda</a></li>
+        <li><a href="#sejarah" class="hover:text-gold-500 transition-colors">Sejarah</a></li>
+        <li><a href="#demografi" class="hover:text-gold-500 transition-colors">Demografi</a></li>
+        <li><a href="#potensi" class="hover:text-gold-500 transition-colors">Potensi</a></li>
+        <li><a href="#peta" class="hover:text-gold-500 transition-colors">Peta</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="font-semibold text-sand-50 text-sm uppercase tracking-wider mb-4">Wilayah Administratif</p>
+      <!-- TODO: konfirmasi nama kecamatan final ke perangkat desa sebelum go-live -->
+      <ul class="space-y-3 text-sand-200/70 text-sm">
+        <li>Kecamatan Bolaang Timur</li>
+        <li>Kabupaten Bolaang Mongondow</li>
+        <li>Provinsi Sulawesi Utara</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-sand-50/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-sand-200/50 font-mono-data">
+      <p>&copy; <span id="current-year"></span> Pemerintah Desa Tadoy Induk. Seluruh hak dilindungi.</p>
+      <p>Dibangun untuk pelayanan publik yang transparan.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="back-to-top" aria-label="Kembali ke atas" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-emerald-900 hover:bg-emerald-800 text-sand-50 shadow-soft flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
